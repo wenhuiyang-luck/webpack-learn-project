@@ -1,0 +1,4 @@
+//config.json
+{
+  "greetText": "Hello World from JSON!"
+}
