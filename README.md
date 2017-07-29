@@ -10,14 +10,14 @@ WebPack可以看做是**模块打包机**：它做的事情是，分析你的项
 
 ## 3. webpack初体验
 
-#### 3.1 安装
+### 3.1 安装
 
 ```
 // 全局安装
 npm install -g webpack
 ```
 
-#### 3.2 webpack使用（命令行方式）
+### 3.2 webpack使用（命令行方式）
 
 - `npm init`   
 
@@ -36,11 +36,11 @@ npm install -g webpack
 
   - `webpack app/main.js public/bundle.js `   // 全局安装的情况。
 
-    ![](./imgs/1.png)
+![](./imgs/1.png)
 
 - 如果在终端中进行复杂的操作，还是不太方便且容易出错。
 
-#### 3.3 Webpack使用（配置文件）
+### 3.3 Webpack使用（配置文件）
 
 新建webpack.config.js文件，并进行简单的配置：
 
@@ -60,7 +60,7 @@ module.exports ={
 
 ![](./imgs/2.png)
 
-#### 3.4 更快捷的执行打包任务
+### 3.4 更快捷的执行打包任务
 
 执行类似于 `node_modules/.bin/webpack`这样的命令其实是比较烦人且容易出错的，不过值得庆幸的是npm可以引导任务执行，对其进行配置后可以使用简单的 `npm start`命令来代替这些繁琐的命令。在package.json中对npm的脚本部分进行相关设置即可，设置方法如下：
 
