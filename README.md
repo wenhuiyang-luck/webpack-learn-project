@@ -12,7 +12,7 @@ WebPack可以看做是**模块打包机**：它做的事情是，分析你的项
 
 ### 3.1 安装
 
-```
+```js
 // 全局安装
 npm install -g webpack
 ```
@@ -44,7 +44,7 @@ npm install -g webpack
 
 新建webpack.config.js文件，并进行简单的配置：
 
-```
+```js
 module.exports ={
   entry: __dirname + "/app/main.js",  //已多次提及的唯一入口文件
   output: {
@@ -64,7 +64,7 @@ module.exports ={
 
 执行类似于 `node_modules/.bin/webpack`这样的命令其实是比较烦人且容易出错的，不过值得庆幸的是npm可以引导任务执行，对其进行配置后可以使用简单的 `npm start`命令来代替这些繁琐的命令。在package.json中对npm的脚本部分进行相关设置即可，设置方法如下：
 
-```
+```js
 {
   "name": "webpack-sample-project",
   "version": "1.0.0",
